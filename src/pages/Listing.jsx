@@ -62,7 +62,7 @@ const Listing = () => {
 
       <div className="listingDetails">
         <p className="listingName">{listing.name} - $
-        {listing.offer.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") ? listing.discountedPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : listing.regularPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        {listing.offer ? listing.discountedPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : listing.regularPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
         </p>
         <div className="listingLocation">{listing.location}</div>
         <p className="listingType">
